@@ -181,7 +181,7 @@ body {
     background-size: 100% auto;
   }
   .fylo {
-    width: 70%;
+    width: 63%;
     margin: auto;
     display: grid;
     grid-template-columns: 38% 1fr;
@@ -194,7 +194,7 @@ body {
   }
   .card2 .gbLeft {
     position: absolute;
-    top: -3.1rem;
+    top: -100px;
     right: 2.5rem;
   }
   .card2 .gbLeft:after {
