@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+}
+
+:root {
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --darkerBlue: hsl(229, 57%, 11%);
+  --peach: hsl(6, 100%, 80%);
+  --pink: hsl(335, 100%, 65%);
+}
+html {
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  padding: 0 1.6rem;
+}
+.card1 {
+  width: 100%;
+  background: var(--darkBlue);
+  padding: 2.5rem;
+  border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+}
+.card1 .btns {
+  margin-top: 1.76rem;
+  display: -webkit-box;
+  display: flex;
+}
+.card1 .btns a {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 3.1rem;
+  height: 3rem;
+  background: var(--darkerBlue);
+  border-radius: 0.6rem;
+  margin-right: 0.9rem;
+}
+.card2 {
+  background: var(--darkBlue);
+  font-size: 14px;
+  border-radius: 0.5rem;
+}
+.bold {
+  font-weight: 700;
+}
+.meter {
+  height: 1.25rem;
+  background: var(--darkerBlue);
+  margin-top: 0.85rem;
+  border-radius: 0.7rem;
+  padding: 0.19rem;
+}
+.meter .bar {
+  width: 76%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(var(--peach)), to(var(--pink)));
+  background: linear-gradient(to right, var(--peach), var(--pink));
+  border-radius: 1rem;
+  padding: 0.15rem;
+  margin-bottom: 0.7rem;
+  -webkit-animation: bar 1.5s forwards;
+          animation: bar 1.5s forwards;
+}
+.card2 .gbLeft {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 0.8rem 1.6rem;
+  background: #fff;
+  width: 181px;
+  font-size: 12px;
+  border-radius: 0.6rem;
+}
+.gbLeft span.bold {
+  font-size: 40px;
+  color: var(--darkerBlue);
+}
+.bar .circ {
+  background: #fff;
+  height: 9px;
+  border-radius: 50%;
+  width: 9px;
+  float: right;
+}
+@media (max-width: 1000px) {
+  body {
+    background: url("https://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-mobile.png"),
+      var(--darkerBlue);
+  }
+  .card1 {
+    margin-top: 8rem;
+  }
+  .card2 {
+    margin-top: 1rem;
+    padding: 2rem 1.8rem;
+  }
+
+  .card2 p {
+    text-align: center;
+  }
+
+  .meter {
+    height: 1.25rem;
+    background: var(--darkerBlue);
+    margin-top: 0.85rem;
+    border-radius: 0.7rem;
+    padding: 0.19rem;
+  }
+
+  .meter .bar {
+    width: 76%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(var(--peach)), to(var(--pink)));
+    background: linear-gradient(to right, var(--peach), var(--pink));
+    border-radius: 1rem;
+    padding: 0.15rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .bar .circ {
+    background: #fff;
+    height: 9px;
+    border-radius: 50%;
+    width: 9px;
+    float: right;
+  }
+  .card2 .gbLeft {
+    margin: 2.45rem auto -4.2rem auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1440px) {
+  body {
+    background: url("https://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-desktop.png"),
+      var(--darkerBlue);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+  }
+  .fylo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 75%;
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    grid-gap: 2rem;
+  }
+  .card2 {
+    margin-top: 3rem;
+    padding: 2.3rem;
+  }
+  .card2 .gbLeft {
+    margin: 2.45rem auto -4.5rem auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 18rem 16rem;
+    background: url("httpse://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-desktop.png"),
+      var(--darkerBlue);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+  }
+  .fylo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    grid-gap: 2rem;
+  }
+  .card2 {
+    margin-top: 3rem;
+    padding: 2.3rem;
+    position: relative;
+  }
+  .card2 .gbLeft {
+    position: absolute;
+    top: -3.1rem;
+    right: 2.5rem;
+  }
+  .card2 .gbLeft:after {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    right: 0;
+    bottom: -23px;
+  }
+}
+
+@-webkit-keyframes bar{
+  0% {
+    width: 8%;
+  }
+  100% {
+    width: 76%;
+  }
+}
+
+@keyframes bar{
+  0% {
+    width: 8%;
+  }
+  100% {
+    width: 76%;
+  }
+}
