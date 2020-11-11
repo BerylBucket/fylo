@@ -173,7 +173,7 @@ body {
 
 @media (min-width: 1440px) {
   body {
-    padding: 18rem 16rem;
+    padding: 18rem 0;
     background: url("https://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-desktop.png"),
       var(--darkerBlue);
     background-repeat: no-repeat;
@@ -181,6 +181,8 @@ body {
     background-size: 100% auto;
   }
   .fylo {
+    width: 70%;
+    margin: auto;
     display: grid;
     grid-template-columns: 38% 1fr;
     grid-gap: 2rem;
