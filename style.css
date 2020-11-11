@@ -174,7 +174,7 @@ body {
 @media (min-width: 1440px) {
   body {
     padding: 18rem 16rem;
-    background: url("httpse://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-desktop.png"),
+    background: url("https://raw.githubusercontent.com/BerylBucket/fylo/main/assets/bg-desktop.png"),
       var(--darkerBlue);
     background-repeat: no-repeat;
     background-position: bottom;
